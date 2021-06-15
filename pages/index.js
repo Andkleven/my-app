@@ -12,8 +12,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <form
-        onSubmit={async (e) => {
-          e.preventDefault();
+        onSubmit={async () => {
           const res = await fetch("/api", {
             body: JSON.stringify({
               state,
